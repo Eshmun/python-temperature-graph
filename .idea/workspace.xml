@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a265bd60-3693-4c6e-981c-d9648970a15f" name="Default" comment="changed which plot to show">
+    <list default="true" id="a265bd60-3693-4c6e-981c-d9648970a15f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_graph.py" afterPath="$PROJECT_DIR$/make_graph.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521834548567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changed to lambda function">
+      <created>1521836228095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521836228095</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -186,7 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed which plot to show" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed which plot to show" />
+    <MESSAGE value="changed to lambda function" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to lambda function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
