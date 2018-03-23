@@ -34,6 +34,6 @@ heat_cap = room_size*density_air*specific_heat_cap
 state_slope_power = (state_slope/60)*heat_cap
 
 #plot and show
-plt.plot(state_filtered)
-#plt.plot(state_slope_power)
+#plt.plot(state_filtered)
+plt.plot(state_slope_power)
 plt.show()
