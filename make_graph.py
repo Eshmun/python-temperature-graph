@@ -2,25 +2,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def calc_rc(*args):
-    """Calcutates the difference between the last and first value of a window"""
-    for i in args:
-        rc = i[-1]-i[0]
-    return rc
-
-
 # Import CSV
 df = pd.read_csv("data.csv")
 # select desired column
 state = df['state']
 # Convert no numeric data and drop rows containing NaN
-state = pd.to_numeric(state, errors='coerce').dropna(axis=0)
+state = pd.to_numeric(state, errors='coerce').dropna()
 
 # state = state.reset_index(drop=True)
 # Apply moving average filter
 state_filtered = state.rolling(window=10, center=False).mean()
 # Calculate the slope over 60 sec
-state_slope = state_filtered.rolling(6).apply(calc_rc)
+state_slope = state_filtered.rolling(6).apply(lambda x: x[-1]-x[0])
 
 # m2
 room_size = 42.5
