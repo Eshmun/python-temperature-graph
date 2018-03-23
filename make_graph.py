@@ -10,7 +10,7 @@ def calc_rc(*args):
 
 
 # Import CSV
-df = pd.read_csv("D:\School\Saxion\Python\data.csv")
+df = pd.read_csv("data.csv")
 # select desired column
 state = df['state']
 # Convert no numeric data and drop rows containing NaN
