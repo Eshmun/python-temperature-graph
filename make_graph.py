@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 # Import CSV
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data1.csv")
 # select desired column
 state = df['state']
 # Convert no numeric data and drop rows containing NaN
@@ -27,6 +27,9 @@ heat_cap = room_size*density_air*specific_heat_cap
 state_slope_power = (state_slope/60)*heat_cap
 
 #plot and show
-#plt.plot(state_filtered)
+plt.subplot(2,1,1)
+plt.plot(state_filtered)
+plt.subplot(2,1,2)
 plt.plot(state_slope_power)
+
 plt.show()
