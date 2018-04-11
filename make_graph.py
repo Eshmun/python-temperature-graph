@@ -11,7 +11,7 @@ state = pd.to_numeric(state, errors='coerce').dropna()
 
 # state = state.reset_index(drop=True)
 # Apply moving average filter
-state_filtered = state.rolling(window=10, center=False).mean()
+state_filtered = state.rolling(window=50, center=False).mean()
 # Calculate the slope over 60 sec
 state_slope = state_filtered.rolling(6).apply(lambda x: x[-1]-x[0])
 
